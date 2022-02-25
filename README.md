@@ -1,4 +1,4 @@
-# javascript-deepdive-study
+# JavaScript DeepDive Study
 자바스크립트 딥다이브 회독 정기 : 스터디 모임 <br />
 
 ![모던자바스크립트 썸네일](https://user-images.githubusercontent.com/34502254/155651222-6216069f-fe73-40f4-96f4-b7288e6ba7c5.png)<br />
