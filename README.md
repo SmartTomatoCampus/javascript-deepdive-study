@@ -7,6 +7,8 @@
 2. 나의 branch에 매일 공부하였던 TIL을 push하여 관리.<br />
 3. push 할 때는 , 반드시 자신의 branch 확인. <br />
 
+![KakaoTalk_20220228_222942604](https://user-images.githubusercontent.com/34502254/155991499-e41f136b-f080-4ed7-811c-a8b9025e1403.png)
+
 #### 맘 편하게 GUI 쓰세요 !!~~
 
 ### <u>딥다이브 회독 스터디 시간 변경 안내</u>
