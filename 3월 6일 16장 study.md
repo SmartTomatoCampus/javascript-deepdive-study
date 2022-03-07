@@ -57,7 +57,7 @@ object.getOwnPropertyDescriptor 메서드는 </br>
 | 프로퍼티 어트리뷰트 | 프로퍼티 디스크립터 </br>객체의 프로퍼티 | 설명 |
 |:------:| :-----: | :----- |
 | [[value]] | value | _ 프로퍼티 키를 통해 프로퍼티 값에 접근하면 반환되는 값이다. </br>_ 프로퍼티 키를 통해 프로퍼티 값을 변경하면 [[value]]에 값을 재할당한다. 이 때 프로퍼티가 없으면 프로퍼티를 동적 생성하고 생성된 프로퍼티의 [[value]]에 값을 저장한다.|
-| [[Writable]] | writable| _ 프로퍼티 값의 변경 가능 여부를 나타내며 불리언 값을 갖는다. </br>_ [[WRitable]]의 값이 false인 경우 해당 프로퍼티의 [[Value]]의 값을 변경할 수 없는 읽기 전용 프로퍼티가 된다.|
+| [[Writable]] | writable| _ 프로퍼티 값의 변경 가능 여부를 나타내며 불리언 값을 갖는다. </br>_ [[Writable]]의 값이 false인 경우 해당 프로퍼티의 [[Value]]의 값을 변경할 수 없는 읽기 전용 프로퍼티가 된다.|
 | [[Enumerable]] | enumerable| _ 프로퍼티의 열거 가능 여부를 나타내며 불리언 값을 갖는다. </br>_ [[Enumerable]]의 값이 false인 경우 해당 프로퍼티는 for ... in 문이나 Object.keys메서드 등으로 열거할 수 없다.|
 | [[COnfigurable]] | configurable| _프로퍼티의 재정의 가능 여부를 나타내며 불리언 값을 갖는다.</br> _ [[Configurable]]의 값이 false인 경우 해당 프로퍼티의 삭제, 프로퍼티 어트리뷰트 값의 변경이 금지된다. 단. [[Writable]]이 true인 경우 [[Value]]의 변경과 [[Writable]]을 false로 변경하는 것은 허용된다.|
 
@@ -164,8 +164,7 @@ ex. [[Prototype]] 내부 슬롯은 **proto**를 통해 간접적으로 접근 �
 
 프로퍼티 생성시 프로퍼티의 상태를 나타내는 프로퍼티 어트리뷰트를 기본값으로 자동 정의
 
-> > [[value]] = 정의한 프로퍼티의 값 </br>
-> > [[writable]] = true 변경가능여부 </br> > > [[enumerable]] = true 열거가능여부 </br> > > [configurable]] = true 재정의가능여부, 삭제가능여부 </br>
+> > [[value]] = 정의한 프로퍼티의 값 </br> > > [[writable]] = true 변경가능여부 </br> > > [[enumerable]] = true 열거가능여부 </br> > > [configurable]] = true 재정의가능여부, 삭제가능여부 </br>
 
 위 4개의 자바스크릡트 엔진이 관리하는 내부상태 값들은 직접 접근할 수는 없지만, <span style="color: #B8E9FF">Object.getOwnPropertyDescriptor</span> 메서드를 사용하여 간접적으로 확인 가능
 
