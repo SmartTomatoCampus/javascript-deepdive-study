@@ -71,7 +71,7 @@ const circle = new Circle(5)
 
 </aside>
 
-### 객체 리터럴
+### 객체 리터럴g
 
 ```jsx
 const circle = {
