@@ -114,3 +114,11 @@ Syntax Sugar는 직관적이고 간결한 문법을 갖고 있습니다. 번거�
     
 
 **for ... in , Object.keys 메서드로 열거 불가.**
+
+# 명성님
+- Class의 Constructor와 생성자 함수의 몇가지 차이점이 있다는 것을 알게 되었다.
+- constructor는 생략할 수 있다는 점.
+- constructor를 생략하면 클래스에 빈 constructor가 암묵적으로 정의된다는 점.
+- constructor를 생략한 클래스는 빈 constructor에 의해 빈 객체를 생성한다는 점인데,
+- class의 constructor 메서드와 프로퍼티 어트리뷰트의 [[constructor]]는 전혀 다른 별개이므로 독립적인 시선으로 바라봐야 한다.
+- 또한 클래스에서의 정적 메서드는 static이라는 키워드를 통해 만들어진다는 점을 통해 인스턴스를 생성하지 않아도 자신만의 메서드를 호출할 수 있다는 점이 마치 전역객체의 생성자 함수처럼 느껴졌다.
