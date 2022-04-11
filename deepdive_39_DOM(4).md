@@ -120,4 +120,12 @@ attributes 프로퍼티는 유사배열객체이다
 
 # 명성님
 
-사용자 입력에 의한 상태 변화와 관계있는 DOM 프로퍼티만 최신 상태 값을 관리한다. 그 외는 항상 동일한 값으로 연동한다.
+- 사용자 입력에 의한 상태 변화와 관계있는 DOM 프로퍼티만 최신 상태 값을 관리한다. 그 외는 항상 동일한 값으로 연동한다.
+- Element.prototype.classList 프로퍼티는 class 어트리뷰트의 정보를 담은 DOMTokenList 객체를 반환한다.
+- classList가 반환하는 DOMTokenList 객체는 HTMLCollection과 NodeList와 같이 노드 객체의 상태 변화를 실시간으로 반영하는 Live 객체다.
+- 라이브객체라는 것을 주의하여 사용할때에는 배열로 변환시키자!
+
+# 초생님
+
+1. DomTokenList 객체는 class 어트리뷰트의 정보를 나타내는 컬렉션 객체로서 유사 배열 객체이면서 이터러블이다.
+2. html 요소에 적용되어 있는 모든 css 스타일을 참조해야할 경우 getComputedStyle 메서드를 사용한다.
